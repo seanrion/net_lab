@@ -1,0 +1,16 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "gdb server(sudo)",
+            "command": "sudo gdbserver :9090 ${workspaceFolder}/build/main",
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "runOptions": {
+                "instanceLimit": 1
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
